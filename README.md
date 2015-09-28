@@ -5,7 +5,7 @@ A webpack loader to generate dynamic asset manifests for static assets (images, 
 
 Define a block in your webpack config that specifies the following options, give it a meaningful key
 
-```
+```JavaScript
     var webpackConfig = {
         entry: {
             client: [jsSrc + "client.js"]
@@ -31,13 +31,13 @@ A blob of matching files to ignore
 
 First define a json file that you want to serve as your dynamic manifest- e.g. asset_manifest.json
 
-```
+```JavaScript
 []
 ```
 
 then require that file wherever you need to dynamically load assets (this examples is using preloadJS)-
 
-```
+```JavaScript
 import assetManifest from "json!manifest-loader?config=images/!../meta/asset_manifest.json"
 
 export default class AssetLoader {
