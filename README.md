@@ -38,7 +38,7 @@ First define a json file that you want to serve as your dynamic manifest- e.g. a
 then require that file wherever you need to dynamically load assets (this examples is using preloadJS)-
 
 ```JavaScript
-import assetManifest from "json!manifest-loader?config=images/!../meta/asset_manifest.json"
+import assetManifest from "bundle?lazy!json!manifest-loader?config=images/!../meta/asset_manifest.json"
 
 export default class AssetLoader {
     static load( progress ) {
@@ -59,5 +59,24 @@ export default class AssetLoader {
         })
     }
 }
+```
+
+#output
+
+The resulting module is an array of relative file paths-
+
+```JavaScript
+
+	module.exports = [
+		"assets/images/android-icon-144x144.png",
+		"assets/images/android-icon-192x192.png",
+		"assets/images/android-icon-36x36.png",
+		"assets/images/android-icon-48x48.png",
+		"assets/images/android-icon-72x72.png",
+		"assets/images/android-icon-96x96.png",
+		"assets/images/apple-icon-114x114.png",
+		"assets/images/apple-icon-120x120.png",
+		"assets/images/apple-icon-144x144.png",
+		"assets/images/apple-icon-152x152.png"];
 ```
 
