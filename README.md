@@ -1,6 +1,9 @@
 # manifest-loader
 A webpack loader to generate dynamic asset manifests for static assets (images, sounds, videos) for passing into a preloading system 
 
+#installation
+``` npm install manifest-loader ```
+
 #config
 
 Define a block in your webpack config that specifies the following options, give it a meaningful key
