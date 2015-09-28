@@ -1,0 +1,29 @@
+{
+  "name": "manifest-loader",
+  "version": "0.0.1",
+  "description": "A webpack loader to generate dynamic asset manifests for static assets (images, sounds, videos) for passing into a preloading system ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RinconStrategies/manifest-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "manifest",
+    "preloading"
+  ],
+  "author": "Charles King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RinconStrategies/manifest-loader/issues"
+  },
+  "homepage": "https://github.com/RinconStrategies/manifest-loader",
+  "peerDependencies": {
+    "loader-utils": "^0.2.11",
+    "recursive-readdir": "^1.2.1",
+    "lodash.assign": "^3.2.0"
+  }
+}

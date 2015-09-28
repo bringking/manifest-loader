@@ -1,0 +1,10 @@
+.DS_Store
+
+# public
+node_modules
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
