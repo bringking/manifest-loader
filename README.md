@@ -30,7 +30,7 @@ Optionally rewrite the path to make it relative (import for a runtime asset load
 ## ignore
 A blob of matching files to ignore
 
-#usage
+# usage
 
 First define a json file that you want to serve as your dynamic manifest- e.g. asset_manifest.json
 
